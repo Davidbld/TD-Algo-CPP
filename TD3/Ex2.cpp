@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
         write_output.flush();
     }
 
-    write_output << "\n"
+    write_output << std::endl
                  << "valeurs de y : ";
     write_output.flush();
 

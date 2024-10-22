@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     double m;
     double x0;
 
-    std::cout << "Quelle methode voullez-vous utiliser : Tapez '1' - Dichotomie | Tapez '2' - Newton-Raphson" << "\n";
+    std::cout << "Quelle methode voullez-vous utiliser : Tapez '1' - Dichotomie | Tapez '2' - Newton-Raphson" << std::endl;
     std::cin >> choice;
     if (choice == 1) /*Methode de la dichotomie*/
     {
@@ -50,11 +50,11 @@ int main(int argc, char *argv[])
                 a = m;
             }
         }
-        std::cout << "La racine approximative est " << (a + b) / 2.0 << "\n";
+        std::cout << "La racine approximative est " << (a + b) / 2.0 << std::endl;
     }
     else if (choice == 2)
     { // Methode de Newton-Raphson
-        std::cout << "Veuillez entrer l'estimation de la racine x0 : " << "\n";
+        std::cout << "Veuillez entrer l'estimation de la racine x0 : " << std::endl;
         std::cin >> x0;
 
         double x1;
@@ -64,11 +64,11 @@ int main(int argc, char *argv[])
             x0 = x1; // Mettre à jour x0 pour la prochaine itération
         } while (std::abs(fonctionF(x0)) > EPSILON); // Condition de convergence
 
-        std::cout << "La racine approximative est : " << x0 << "\n";
+        std::cout << "La racine approximative est : " << x0 << std::endl;
     }
     else
     {
-        std::cout << "Erreur, veuillez reessayer" << "\n";
+        std::cout << "Erreur, veuillez reessayer" << std::endl;
     }
     return 0; // Sortie sans erreur
 }

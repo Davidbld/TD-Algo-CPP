@@ -11,10 +11,10 @@ int main(int argc, char *argv[])
 
     // calcul du déterminant
     double detA = (matriceClassique[0][0] * matriceClassique[1][1]) - (matriceClassique[0][1] * matriceClassique[1][0]);
-    std::cout << "Déterminant : " << detA << "\n";
+    std::cout << "Déterminant : " << detA << std::endl;
     if (detA != 0)
     {
-        std::cout << "La matrice est inversible" << "\n";
+        std::cout << "La matrice est inversible" << std::endl;
         matriceInversee[0][0] = matriceClassique[1][1];
         matriceInversee[0][1] = -matriceClassique[1][0];
         matriceInversee[1][0] = -matriceClassique[0][1];
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        std::cout << "Erreur" << "\n";
+        std::cout << "Erreur" << std::endl;
         assert(detA = 0);
     }
     for (int i = 0; i < 2; i++)
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         {
             std::cout << 1 / (detA)*matriceInversee[i][j] << "\t";
         }
-        std::cout << "\n";
+        std::cout << std::endl;
     }
 
     return 0;

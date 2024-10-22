@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int main(int argc, char *argv[])
 {
@@ -6,8 +7,8 @@ int main(int argc, char *argv[])
     int a = 5;
     int b = 10;
 
-    std::cout << "La valeur de a est : " << a << '\n'
-              << "La valeur de b est : " << b << '\n';
+    cout << "La valeur de a est : " << a << endl
+              << "La valeur de b est : " << b << endl;
 
     int *p = new int;
     int *r = new int;
@@ -18,8 +19,8 @@ int main(int argc, char *argv[])
     p = &b;
     r = &a;
 
-    std::cout << "La valeur de a est : " << *p << '\n'
-              << "La valeur de b est : " << *r << '\n';
+    cout << "La valeur de a est : " << *p << endl
+              << "La valeur de b est : " << *r << endl;
 
     return 0;
 }
