@@ -18,3 +18,5 @@ Ce repository a été créé dans un cadre universitaire et documente l'ensemble
 - ```#include <vector>``` pour faire des vecteurs à stockage dynamique.
 
 - ```#include <iomanip>``` pour utiliser d'autre fonctions comme ```set_precision(x+1)```
+
+- ```using namespace std``` pour enlever le ```std::``` et gardé le ```cout```, ```cin```...
